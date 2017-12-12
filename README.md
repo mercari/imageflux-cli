@@ -2,6 +2,12 @@
 
 This is unofficial [ImageFlux](https://www.sakura.ad.jp/services/imageflux/) API client. Official API reference is [here](https://console.imageflux.jp/docs/).
 
+# Installation
+
+```
+go get -u github.com/mercari/imageflux-cli/cmd/imageflux-cli
+```
+
 ## Lookup cache
 
 ```
