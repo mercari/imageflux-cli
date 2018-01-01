@@ -110,8 +110,8 @@ func buildAPIRespinse(rawResponse *RawAPIResponse) (*APIResponse, error) {
 	return resp, nil
 }
 
-// Run issues request to ImageFlux API endpoint.
-func Run(command string) error {
+// Issue issues request to ImageFlux API endpoint.
+func Issue(command string) error {
 	f := flag.NewFlagSet(os.Args[0]+" "+command, flag.ExitOnError)
 	url := f.String("k", "", "cache key")
 	verbose := f.Bool("v", false, "verbose output mode")
