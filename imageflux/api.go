@@ -102,7 +102,7 @@ func issue(command string, param *APIParam) (*RawAPIResponse, error) {
 
 }
 
-func buildAPIRespinse(rawResponse *RawAPIResponse) (*APIResponse, error) {
+func buildAPIResponse(rawResponse *RawAPIResponse) (*APIResponse, error) {
 	resp := &APIResponse{}
 	if err := json.Unmarshal(rawResponse.ResponseBody, &resp); err != nil {
 		return nil, err
@@ -137,7 +137,7 @@ func Run(command string) error {
 	}
 
 	if *verbose {
-		resp, err := buildAPIRespinse(rawResp)
+		resp, err := buildAPIResponse(rawResp)
 		if err != nil {
 			return err
 		}
