@@ -1,8 +1,9 @@
 package imageflux
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLoadConfEmptyTokenError(t *testing.T) {
