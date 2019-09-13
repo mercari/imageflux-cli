@@ -1,3 +1,5 @@
+export GO111MODULE=on
+
 all: imageflux-cli
 
 imageflux-cli: cmd/imageflux-cli/*.go imageflux/*.go
